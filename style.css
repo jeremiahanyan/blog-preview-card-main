@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Figtree'; /* This is the name you’ll use later */
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Figtree'; /* This is the name you’ll use later */
+  src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Figtree'; /* This is the name you’ll use later */
+  src: url('./assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+html, body {
+    height: 100%;
+    overflow: hidden; /* prevent sideways scroll */
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.status {
+    font-family: 'Figtree';
+    font-weight: bold;
+}
+.card-container {
+    width: 384px;
+    background-color: white;
+    border: 1.5px solid hsl(0, 0%, 0%);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0px hsl(0, 0%, 0%);
+}
+.card-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.publishing-date {
+    font-family: 'Figtree';
+    font-weight: 500;
+    font-size: small;
+}
+header {
+    font-family: 'Figtree';
+    font-weight: bold;
+    margin: 15px 0;
+}
+header:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.status {
+    margin: 20px 0 13px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    font-size: .9em;
+    width: 84px;
+    height: 27px;
+    background-color: hsl(47, 88%, 63%);
+}
+.text-content {
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+.writer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: .85em;
+}
+.writer img {
+    width: 30px;
+}
